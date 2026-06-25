@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://byk-cryptotax.vercel.app/sitemap.xml

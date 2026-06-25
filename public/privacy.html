@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy — BYK CryptoTax</title>
+  <meta name="description" content="Privacy Policy for BYK CryptoTax. We don't store your data. Calculations run entirely in your browser."/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://byk-cryptotax-seo.vercel.app/privacy.html"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0D1117;
+      --bg2: #13192A;
+      --card: #1A1F2E;
+      --text: #E8ECF4;
+      --text2: #B0BAC9;
+      --muted: #6B7587;
+      --border: #252D3D;
+      --gold: #E8930A;
+      --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── HEADER ── */
+    header {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(13,17,23,0.95);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+    }
+    .nav-inner {
+      max-width: 820px; margin: 0 auto;
+      display: flex; align-items: center;
+      justify-content: space-between; height: 56px;
+    }
+    .brand { font-weight: 900; font-size: 16px; letter-spacing: -0.03em; text-decoration: none; color: var(--text); }
+    .brand span { color: var(--gold); }
+    .back-btn {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 13px; color: var(--muted); text-decoration: none;
+      padding: 6px 12px; border: 1px solid var(--border);
+      border-radius: 6px; transition: color 0.15s, border-color 0.15s;
+    }
+    .back-btn:hover { color: var(--gold); border-color: var(--gold); }
+
+    /* ── HERO ── */
+    .hero {
+      background: #090C14;
+      padding: 56px 24px 48px;
+      border-bottom: 1px solid var(--border);
+    }
+    .hero-inner { max-width: 820px; margin: 0 auto; }
+    .eyebrow {
+      font-size: 11px; font-weight: 700;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 12px;
+    }
+    .hero h1 {
+      font-size: clamp(28px, 5vw, 42px);
+      font-weight: 900; letter-spacing: -0.03em;
+      line-height: 1.1; margin-bottom: 14px;
+    }
+    .hero p { color: var(--muted); font-size: 15px; }
+    .updated {
+      display: inline-block; margin-top: 16px;
+      font-size: 12px; color: var(--muted);
+      background: var(--card); border: 1px solid var(--border);
+      padding: 4px 12px; border-radius: 20px;
+    }
+
+    /* ── CONTENT ── */
+    main { max-width: 820px; margin: 0 auto; padding: 48px 24px 80px; }
+
+    .toc {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 12px; padding: 24px 28px; margin-bottom: 48px;
+    }
+    .toc-title { font-size: 13px; font-weight: 700; color: var(--gold); margin-bottom: 14px; letter-spacing: 0.05em; text-transform: uppercase; }
+    .toc ol { padding-left: 20px; }
+    .toc li { margin-bottom: 6px; }
+    .toc a { color: var(--text2); text-decoration: none; font-size: 14px; }
+    .toc a:hover { color: var(--gold); }
+
+    .section { margin-bottom: 48px; scroll-margin-top: 80px; }
+    .section h2 {
+      font-size: 20px; font-weight: 800;
+      letter-spacing: -0.02em; color: var(--text);
+      margin-bottom: 16px; padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; gap: 10px;
+    }
+    .section h2 .icon { font-size: 20px; }
+    .section p { color: var(--text2); margin-bottom: 14px; font-size: 15px; }
+    .section ul { padding-left: 20px; margin-bottom: 14px; }
+    .section li { color: var(--text2); margin-bottom: 8px; font-size: 15px; }
+    .section li::marker { color: var(--gold); }
+    .section a { color: var(--gold); }
+
+    .highlight {
+      background: var(--card); border: 1px solid var(--border);
+      border-left: 3px solid var(--gold);
+      border-radius: 8px; padding: 16px 20px;
+      margin: 16px 0; font-size: 14px; color: var(--text2);
+    }
+    .highlight strong { color: var(--text); }
+
+    .badge-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px; }
+    .badge {
+      padding: 8px 14px; border: 1px solid var(--border);
+      border-radius: 8px; font-size: 13px; font-weight: 600;
+      background: var(--card); color: var(--text);
+    }
+
+    /* ── CONTACT CARD ── */
+    .contact-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 12px; padding: 28px;
+      text-align: center; margin-top: 48px;
+    }
+    .contact-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+    .contact-card p { color: var(--muted); font-size: 14px; margin-bottom: 16px; }
+    .contact-card a {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--gold); color: #0F172A;
+      padding: 12px 24px; border-radius: 8px;
+      font-weight: 700; font-size: 14px; text-decoration: none;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #06090F;
+      border-top: 1px solid rgba(255,255,255,0.04);
+      padding: 28px 24px; text-align: center;
+    }
+    footer p { font-size: 13px; color: #484F5E; }
+    footer a { color: var(--gold); }
+
+    @media (max-width: 600px) {
+      .hero { padding: 40px 20px 32px; }
+      main { padding: 32px 20px 60px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="nav-inner">
+      <a href="/" class="brand">BYK <span>CryptoTax</span></a>
+      <a href="/" class="back-btn">← Back to Calculator</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Legal</div>
+      <h1>Privacy Policy</h1>
+      <p>We built this tool to help you — not to collect your data. Here's exactly what we do and don't do.</p>
+      <span class="updated">Last updated: 24 June 2026</span>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- Table of Contents -->
+    <div class="toc">
+      <div class="toc-title">Contents</div>
+      <ol>
+        <li><a href="#overview">Overview — The Short Version</a></li>
+        <li><a href="#data">What Data We Collect</a></li>
+        <li><a href="#calculator">How the Calculator Works</a></li>
+        <li><a href="#csv">CSV Email Option</a></li>
+        <li><a href="#cookies">Cookies</a></li>
+        <li><a href="#third-party">Third-Party Links</a></li>
+        <li><a href="#dpdp">DPDP Act, 2023 Compliance</a></li>
+        <li><a href="#children">Children's Privacy</a></li>
+        <li><a href="#changes">Changes to This Policy</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ol>
+    </div>
+
+    <!-- 1. Overview -->
+    <div class="section" id="overview">
+      <h2><span class="icon">📋</span> Overview — The Short Version</h2>
+      <div class="highlight">
+        <strong>Plain English summary:</strong> The calculator runs entirely in your browser. We don't see your numbers, we don't store them, and we don't sell them. The only time we receive any data is if you choose to email us a CSV file — and even then, we use it only to help you and delete it afterward.
+      </div>
+      <div class="badge-row">
+        <span class="badge">🔒 No data stored</span>
+        <span class="badge">🚫 No ads or trackers</span>
+        <span class="badge">📧 Email optional only</span>
+        <span class="badge">🇮🇳 DPDP Act, 2023 aligned</span>
+      </div>
+    </div>
+
+    <!-- 2. Data We Collect -->
+    <div class="section" id="data">
+      <h2><span class="icon">📊</span> What Data We Collect</h2>
+      <p>BYK CryptoTax collects minimal data. Here is a complete list:</p>
+      <ul>
+        <li><strong>Calculator inputs (purchase value, sale value, TDS):</strong> Processed entirely in your browser. Never transmitted to our servers.</li>
+        <li><strong>Server logs:</strong> Standard web server logs may record your IP address and browser type when you visit the site. These are retained for up to 30 days for security purposes and are not used for profiling.</li>
+        <li><strong>CSV files (optional):</strong> Only if you choose to email your exchange CSV for the bulk-help service. See section 4 for details.</li>
+      </ul>
+      <p>We do <strong>not</strong> collect: names, email addresses (unless you contact us), Aadhaar numbers, PAN numbers, financial account details, or any personally identifiable information through the calculator.</p>
+    </div>
+
+    <!-- 3. Calculator -->
+    <div class="section" id="calculator">
+      <h2><span class="icon">🖥️</span> How the Calculator Works</h2>
+      <p>The BYK CryptoTax calculator is a client-side tool. This means:</p>
+      <ul>
+        <li>All calculations happen inside your web browser using JavaScript.</li>
+        <li>Your purchase value, sale value, TDS amount, and results are never sent to our servers.</li>
+        <li>We have no technical ability to see or access the numbers you enter.</li>
+        <li>Closing your browser tab clears all data — nothing is saved locally unless you explicitly choose to save or download a result.</li>
+      </ul>
+      <div class="highlight">
+        <strong>Technical note:</strong> The calculator is a static React application served via Vercel's CDN. No backend server processes your financial inputs at any point.
+      </div>
+    </div>
+
+    <!-- 4. CSV -->
+    <div class="section" id="csv">
+      <h2><span class="icon">📂</span> CSV Email Option</h2>
+      <p>If you have a large number of transactions, we offer a manual service where you can email your exchange CSV file and receive a Schedule VDA summary in return.</p>
+      <ul>
+        <li>This service is entirely optional — the calculator works without it.</li>
+        <li>CSV files sent to us are used only to prepare your tax summary.</li>
+        <li>We do not share, sell, or disclose your CSV data to any third party.</li>
+        <li>Files are deleted after your summary is sent to you.</li>
+        <li>By emailing your CSV, you consent to this processing.</li>
+      </ul>
+      <p>Email for CSV help: <a href="mailto:qamin219@gmail.com">qamin219@gmail.com</a></p>
+    </div>
+
+    <!-- 5. Cookies -->
+    <div class="section" id="cookies">
+      <h2><span class="icon">🍪</span> Cookies</h2>
+      <p>BYK CryptoTax uses minimal cookies:</p>
+      <ul>
+        <li><strong>Essential cookies:</strong> Used to remember your cookie consent preference. No personal data.</li>
+        <li><strong>No advertising cookies:</strong> We do not use Google Ads, Facebook Pixel, or any advertising network cookies.</li>
+        <li><strong>No tracking cookies:</strong> We do not use cross-site tracking technologies.</li>
+      </ul>
+      <p>Vercel, our hosting provider, may set technical cookies necessary for CDN delivery and security. These are governed by <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noreferrer">Vercel's Privacy Policy</a>.</p>
+      <p>You can disable cookies in your browser settings. The calculator will continue to work without cookies.</p>
+    </div>
+
+    <!-- 6. Third Party -->
+    <div class="section" id="third-party">
+      <h2><span class="icon">🔗</span> Third-Party Links</h2>
+      <p>This site contains links to external services including:</p>
+      <ul>
+        <li>WhatsApp (Meta Platforms)</li>
+        <li>Telegram</li>
+        <li>YouTube (Google)</li>
+        <li>Instagram (Meta Platforms)</li>
+        <li>incometax.gov.in (Government of India)</li>
+      </ul>
+      <p>When you click these links, you leave BYK CryptoTax. We are not responsible for the privacy practices of these external websites. Please review their privacy policies before sharing personal information.</p>
+    </div>
+
+    <!-- 7. DPDP -->
+    <div class="section" id="dpdp">
+      <h2><span class="icon">🇮🇳</span> DPDP Act, 2023 Compliance</h2>
+      <p>BYK CryptoTax is designed to align with the Digital Personal Data Protection Act, 2023 (DPDP Act). Specifically:</p>
+      <ul>
+        <li><strong>Data Minimisation:</strong> We collect only what is necessary — and for the calculator, that is nothing at all.</li>
+        <li><strong>Purpose Limitation:</strong> CSV data received via email is used only for preparing your tax summary and for no other purpose.</li>
+        <li><strong>Storage Limitation:</strong> CSV files are deleted after your summary is delivered.</li>
+        <li><strong>Transparency:</strong> This policy clearly describes all data practices.</li>
+        <li><strong>Consent:</strong> Cookie consent is obtained before non-essential cookies are set.</li>
+      </ul>
+      <p>As the DPDP Act framework continues to be notified by the Government of India, we will update our practices accordingly.</p>
+    </div>
+
+    <!-- 8. Children -->
+    <div class="section" id="children">
+      <h2><span class="icon">👶</span> Children's Privacy</h2>
+      <p>BYK CryptoTax is intended for adult users who are filing income tax returns in India. We do not knowingly collect data from persons under 18 years of age. If you believe a minor has submitted data to us, please contact us and we will delete it promptly.</p>
+    </div>
+
+    <!-- 9. Changes -->
+    <div class="section" id="changes">
+      <h2><span class="icon">🔄</span> Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. The "Last updated" date at the top of this page will reflect any changes. Continued use of BYK CryptoTax after changes are posted constitutes your acceptance of the updated policy.</p>
+      <p>We will not make changes that significantly reduce your privacy protections without providing notice through our WhatsApp or Telegram channels.</p>
+    </div>
+
+    <!-- 10. Contact -->
+    <div class="section" id="contact">
+      <h2><span class="icon">📬</span> Contact Us</h2>
+      <p>For any privacy-related questions, data deletion requests, or concerns about this policy:</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:qamin219@gmail.com">qamin219@gmail.com</a></li>
+        <li><strong>Location:</strong> Balangir, Odisha, India</li>
+      </ul>
+    </div>
+
+    <!-- Contact Card -->
+    <div class="contact-card">
+      <h3>Questions About Your Privacy?</h3>
+      <p>We'll respond within 48 hours.</p>
+      <a href="mailto:qamin219@gmail.com">📧 Email Us</a>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 BYK CryptoTax. Built in Balangir, Odisha. — <a href="/">Back to Calculator</a></p>
+  </footer>
+
+</body>
+</html>
